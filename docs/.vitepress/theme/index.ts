@@ -4,8 +4,8 @@ import GlobalElement from './components/GlobalElement.vue'
 import VersionDateTag from './components/VersionDateTag.vue'
 // import ComposeUI from 'composed-ui'
 // import 'composed-ui/css'
-import ComposeUI from '../../../dist/index'
-import '../../../dist/style.css'
+import ComposeUI from '../../../umd/index'
+import '../../../umd/style.css'
 
 export default {
   extends: DefaultTheme, // or ...DefaultTheme

@@ -1,11 +1,11 @@
 ---
 layout: home
 
-title:Composed UI
+title: Composed UI
 titleTemplate: Composed UI Components Library
 
 hero:
-  name:Composed UI
+  name: Composed UI
   text: Composed UI 组件库
   tagline: 基于 Vue3 + TypeScript + Vite 开发
   image:
