@@ -16,8 +16,8 @@ hero:
       text: 开始使用
       link: /guide/features
     - theme: alt
-      text: 成为赞助者 ✨
-      link: https://Kitesource.github.io/composed-ui/sponsor/charge.html
+      text: Github
+      link: https://github.com/Kitesource/composed-ui
 features:
   - icon: 💡
     title: 最新技术

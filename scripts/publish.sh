@@ -33,4 +33,4 @@ git commit -m "feat: update $version"
 git push
 
 # 重新部署文档
-pnpm docs:deploy "$commitDesc"
+pnpm deploy:docs "$commitDesc"

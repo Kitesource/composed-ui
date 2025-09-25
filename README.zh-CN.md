@@ -207,9 +207,8 @@ pnpm dev
 - 启动文档
 
 ```sh
-pnpm docs:dev
+pnpm dev:docs
 ```
-
 
 ## 组件
 

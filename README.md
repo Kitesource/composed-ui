@@ -210,9 +210,8 @@ pnpm dev
 - Run docs
 
 ```sh
-pnpm docs:dev
+pnpm dev:docs
 ```
-
 
 ## Components
 
