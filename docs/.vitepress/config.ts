@@ -59,8 +59,8 @@ export default defineConfig({
         text: '🔗 链接',
         items: [
           { text: 'Github', link: 'https://github.com/Kitesource' },
-          { text: 'CSDN', link: 'https://Kitesource.blog.csdn.net' },
-          { text: 'Front-end Notes', link: 'https://Kitesource.github.io/front-end-notes/' },
+          { text: 'Playground', link: 'https://Kitesource.github.io/composed-ui/playground' },
+          { text: 'CSDN', link: 'https://blog.csdn.net/qq_44376306' },
           {
             items: [
               {

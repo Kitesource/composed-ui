@@ -50,10 +50,10 @@ export const routes: RouteRecordRaw[] = [
     path: '/',
     name: 'Index',
     component: GlobalLayout,
-    redirect: '/home',
+    redirect: { name: 'Home' },
     children: [
       {
-        path: '/home',
+        path: '',
         name: 'Home',
         meta: { title: '首页' },
         component: components['../views/home/Index.vue']

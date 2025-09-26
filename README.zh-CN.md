@@ -11,7 +11,7 @@
 
 ## 文档
 
-[Composed UI](https://Kitesource.github.io/composed-ui/)
+[Composed UI](https://Kitesource.github.io/composed-ui/) [Playground](https://Kitesource.github.io/composed-ui/playground)
 
 ## 特性
 
