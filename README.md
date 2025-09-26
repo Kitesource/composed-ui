@@ -12,7 +12,9 @@
 
 ## Documentation
 
-[Composed UI](https://Kitesource.github.io/composed-ui/) [Playground](https://Kitesource.github.io/composed-ui/playground)
+[Composed UI](https://Kitesource.github.io/composed-ui/)
+
+[Playground](https://Kitesource.github.io/composed-ui/playground)
 
 ## Features
 
