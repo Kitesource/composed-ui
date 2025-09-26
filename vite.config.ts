@@ -193,15 +193,12 @@ const buildESAndLibOptions = {
 // 为src目录添加的特定构建配置
 const buildDistOptions = {
   emptyOutDir: true, // 清空输出目录
-  outDir: 'dist', // src打包的输出目录
+  outDir: 'dist/playground', // src打包的输出目录
   // 应用模式构建，不需要设置lib
   rollupOptions: {
     input: resolve(__dirname, 'index.html'), // 使用index.html作为入口
     output: {
-      format: 'es',
-      entryFileNames: 'assets/[name]-[hash].js',
-      chunkFileNames: 'assets/[name]-[hash].js',
-      assetFileNames: 'assets/[name]-[hash].[ext]'
+      format: 'es'
     }
   },
   // 启用CSS代码拆分
@@ -212,6 +209,7 @@ const buildDistOptions = {
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: dir === 'dist' ? '/composed-ui/playground/' : '/',
   plugins: [
     vue(),
     VueDevTools({
