@@ -1,1 +1,0 @@
-import{d as o,a as s,o as r,b as a,t as n}from"./index-CFjtUxAq.js";const p=o({__name:"Index",setup(l){return(e,t)=>(r(),s("div",null,[a("h1",null,n(e.$route.name)+" "+n(e.$route.meta.title),1),t[0]||(t[0]=a("h2",{class:"mt30 mb10"},"基本使用",-1))]))}});export{p as default};
