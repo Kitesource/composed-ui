@@ -101,7 +101,7 @@ const layoutOptions = [
           </p>
           <img
             style="max-width: 100%"
-            src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/6.jpg"
+            src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/6.jpg"
             alt="示例图片"
           />
         </Watermark>

@@ -2,7 +2,7 @@
 
 <GlobalElement />
 
-*分段控制器*
+_分段控制器_
 
 ## 何时使用
 
@@ -44,7 +44,7 @@ const customOptions1 = reactive<SegmentedOption[]>([
     label: 'user1',
     value: 'user1',
     payload: {
-      src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
       style: { backgroundColor: '#f56a00' }
     }
   },
@@ -202,7 +202,14 @@ const loadMore = () => {
 <script setup lang="ts">
 import { reactive, ref } from 'vue'
 import type { SegmentedProps } from 'composed-ui'
-const blockOptions = reactive<string[]>(['Daily', 'Weekly', 'Monthly', 'Quarterly', 'Yearly', 'Long Text Long Text Long Text'])
+const blockOptions = reactive<string[]>([
+  'Daily',
+  'Weekly',
+  'Monthly',
+  'Quarterly',
+  'Yearly',
+  'Long Text Long Text Long Text'
+])
 const value = ref<SegmentedProps['value']>(blockOptions[0])
 </script>
 <template>
@@ -257,7 +264,7 @@ const customOptions1 = reactive<SegmentedOption[]>([
     label: 'user1',
     value: 'user1',
     payload: {
-      src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
       style: { backgroundColor: '#f56a00' }
     }
   },
@@ -379,31 +386,31 @@ const value = ref<SegmentedProps['value']>(options[0])
 
 ### Segmented
 
-参数 | 说明 | 类型 | 默认值
-:-- | :-- | :-- | :--
-block | 是否将宽度调整为父元素宽度，同时所有选项占据相同的宽度 | boolean | false
-disabled | 是否禁用 | boolean | false
-options | 选项数据 | string[] &#124; number[] &#124; [Option](#option-type)[] | []
-size | 控件尺寸 | 'small' &#124; 'middle' &#124; 'large' | 'middle'
-value <Tag color="cyan">v-model</Tag> | 当前选中的值 | string &#124; number | undefined
+| 参数 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| block | 是否将宽度调整为父元素宽度，同时所有选项占据相同的宽度 | boolean | false |
+| disabled | 是否禁用 | boolean | false |
+| options | 选项数据 | string[] &#124; number[] &#124; [Option](#option-type)[] | [] |
+| size | 控件尺寸 | 'small' &#124; 'middle' &#124; 'large' | 'middle' |
+| value <Tag color="cyan">v-model</Tag> | 当前选中的值 | string &#124; number | undefined |
 
 ### Option Type
 
-名称 | 说明 | 类型 | 默认值
-:-- | :-- | :-- | :--
-label? | 选项名 | string | undefined
-value | 选项值 | string &#124; number | undefined
-disabled? | 是否禁用选项 | boolean | false
-payload? | 自定义数据载体 | any | undefined
+| 名称      | 说明           | 类型                 | 默认值    |
+| :-------- | :------------- | :------------------- | :-------- |
+| label?    | 选项名         | string               | undefined |
+| value     | 选项值         | string &#124; number | undefined |
+| disabled? | 是否禁用选项   | boolean              | false     |
+| payload?  | 自定义数据载体 | any                  | undefined |
 
 ## Slots
 
-名称 | 说明 | 类型
-:-- | :-- | :--
-label | 自定义图标 | v-slot:label="{ option, label, index, payload }"
+| 名称  | 说明       | 类型                                             |
+| :---- | :--------- | :----------------------------------------------- |
+| label | 自定义图标 | v-slot:label="{ option, label, index, payload }" |
 
 ## Events
 
-名称 | 说明 | 类型
-:-- | :-- | :--
-change | 选项变化时的回调函数 | (value: string &#124; number) => void
+| 名称   | 说明                 | 类型                                  |
+| :----- | :------------------- | :------------------------------------ |
+| change | 选项变化时的回调函数 | (value: string &#124; number) => void |

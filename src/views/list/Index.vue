@@ -74,7 +74,7 @@ for (let i = 1; i <= 8; i++) {
   allListData.value.push({
     href: 'https://Kitesource.github.io/composed-ui/',
     title: `Composed UI part ${i}`,
-    avatar: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg',
+    avatar: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg',
     description: 'Composed UI, A Composed Vue3 UI Components Library.',
     content:
       'Composed UI supplies streamline web development, incredible Vue components for modern web design and transform your Vue interface completely.'
@@ -140,7 +140,7 @@ const state = reactive({
     <List>
       <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -151,7 +151,7 @@ const state = reactive({
     <List :split="false">
       <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -167,7 +167,7 @@ const state = reactive({
         </template>
         <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
           <template #avatar>
-            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
           </template>
           <template #description>
             {{ data.description }}
@@ -186,7 +186,7 @@ const state = reactive({
           <List bordered :size="size">
             <ListItem v-for="(data, index) in simpleListData" :key="index">
               <template #avatar>
-                <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+                <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
               </template>
               <template #title>
                 <a href="https://Kitesource.github.io/composed-ui/">{{ data.title }}</a>
@@ -220,7 +220,7 @@ const state = reactive({
           <List bordered :loading="loading">
             <ListItem v-for="(data, index) in simpleListData" :key="index" :title="data.title">
               <template #avatar>
-                <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+                <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
               </template>
               <template #description>
                 {{ data.description }}
@@ -253,7 +253,7 @@ const state = reactive({
         <List bordered hoverable>
           <ListItem v-for="(data, index) in simpleListData" :key="index" :title="data.title">
             <template #avatar>
-              <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+              <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
             </template>
             <template #description>
               {{ data.description }}
@@ -279,7 +279,7 @@ const state = reactive({
     <List>
       <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -320,7 +320,7 @@ const state = reactive({
             class="extra-img"
             width="200"
             alt="extra"
-            src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/2.jpg"
+            src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg"
           />
         </template>
       </ListItem>
@@ -332,7 +332,7 @@ const state = reactive({
           <a :href="data.href" target="_blank">{{ data.title }}</a>
         </template>
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -418,7 +418,7 @@ const state = reactive({
             <a :href="data.href" target="_blank">{{ data.title }}</a>
           </template>
           <template #avatar>
-            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
           </template>
           <template #description>
             {{ data.description }}

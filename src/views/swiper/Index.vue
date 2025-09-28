@@ -7,8 +7,8 @@ function loadImages() {
   for (let i = 1; i <= 6; i++) {
     images.value.push({
       name: `image-${i}`,
-      src: `https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/${i}.jpg`,
-      link: `https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/${i}.jpg`
+      src: `https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/${i}.jpg`,
+      link: `https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/${i}.jpg`
     })
   }
 }

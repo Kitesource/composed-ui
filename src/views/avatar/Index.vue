@@ -82,7 +82,7 @@ const color = ref('#87d068')
       </Avatar>
       <Avatar>U</Avatar>
       <Avatar :size="40">USER</Avatar>
-      <Avatar :size="40" src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+      <Avatar :size="40" src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg" />
       <Avatar style="color: #f56a00; background-color: #fde3cf">U</Avatar>
     </Space>
     <h2 class="mt30 mb10">带徽标的头像</h2>

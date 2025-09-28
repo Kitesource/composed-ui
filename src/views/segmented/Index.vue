@@ -40,7 +40,7 @@ const customOptions1 = reactive<SegmentedOption[]>([
     label: 'user1',
     value: 'user1',
     payload: {
-      src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg',
+      src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
       style: { backgroundColor: '#f56a00' }
     }
   },

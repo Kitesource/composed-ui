@@ -6,23 +6,23 @@ const files = ref<UploadFileType[]>([])
 const fileList = ref<UploadFileType[]>([
   {
     name: '1.jpg',
-    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
+    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
   },
   {
     name: 'Markdown.pdf',
-    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/Markdown.pdf'
+    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/Markdown.pdf'
   }
 ])
 const imageList = ref<UploadFileType[]>([
   {
     name: '1.jpg',
-    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
+    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
   }
 ])
 const pdfList = ref<UploadFileType[]>([
   {
     name: 'Markdown.pdf',
-    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/Markdown.pdf'
+    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/Markdown.pdf'
   }
 ])
 watchEffect(() => {
@@ -69,16 +69,15 @@ function onBeforePdfUpload(file: File) {
 function onCustomRequest(file: File) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
+      let res = {
+        name: '1.jpg',
+        url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
+      }
       // 模拟接口调用返回 name 和 url
       if (file.type === 'application/pdf') {
-        var res = {
+        res = {
           name: 'Markdown.pdf',
-          url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/Markdown.pdf'
-        }
-      } else {
-        var res = {
-          name: '1.jpg',
-          url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
+          url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/Markdown.pdf'
         }
       }
       if (res) {
@@ -97,17 +96,17 @@ function onCustomSliceUpload(file: File) {
       console.log('chunks', chunks)
       console.timeEnd('sliceFile')
       setTimeout(() => {
+        let res = {
+          name: '1.jpg',
+          url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
+        }
         // 模拟接口调用返回 name 和 url
         if (file.type === 'application/pdf') {
-          var res = {
+          res = {
             name: 'Markdown.pdf',
-            url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/Markdown.pdf'
+            url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/Markdown.pdf'
           }
         } else {
-          var res = {
-            name: '1.jpg',
-            url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
-          }
         }
         if (res) {
           resolve(res)

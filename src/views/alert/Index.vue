@@ -150,7 +150,7 @@ function onClose(e: Event) {
       </Alert>
       <Alert type="success" show-icon>
         <template #icon>
-          <Avatar size="small" src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg" />
+          <Avatar size="small" src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
         </template>
         Success
       </Alert>
@@ -191,7 +191,7 @@ function onClose(e: Event) {
         show-icon
       >
         <template #icon>
-          <Avatar size="large" src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/2.jpg" />
+          <Avatar size="large" src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/avatar.jpeg" />
         </template>
       </Alert>
     </Flex>

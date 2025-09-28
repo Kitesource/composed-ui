@@ -4,44 +4,44 @@ import type { CarouselProps, CarouselImage } from 'components/types'
 const images = ref<CarouselImage[]>([
   {
     name: 'image-1',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
   },
   {
     name: 'image-2',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/2.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/2.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg'
   },
   {
     name: 'image-3',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/3.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/3.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/3.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/3.jpg'
   },
   {
     name: 'image-4',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/4.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/4.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/4.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/4.jpg'
   },
   {
     name: 'image-5',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/5.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/5.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/5.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/5.jpg'
   },
   {
     name: 'image-6',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/6.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/6.jpg'
   },
   {
     name: 'image-7',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/7.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/7.jpg'
   },
   {
     name: 'image-8',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/8.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/8.jpg'
   },
   {
     name: 'image-9',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/9.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/9.jpg'
   }
 ])
 const showArrow = ref<boolean>(false)

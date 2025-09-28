@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 const video = ref()
 function onPlay() {
   console.log('play')

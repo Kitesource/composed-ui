@@ -38,26 +38,26 @@ const radioChecked = ref<boolean>(false)
 const images = ref<CarouselImage[]>([
   {
     name: 'image-1',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
   },
   {
     name: 'image-2',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/2.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/2.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg'
   },
   {
     name: 'image-3',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/3.jpg',
-    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/3.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/3.jpg',
+    link: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/3.jpg'
   },
   {
     name: 'image-4',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/4.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/4.jpg'
   },
   {
     name: 'image-5',
-    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/5.jpg'
+    src: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/5.jpg'
   }
 ])
 const options = ref<SelectOption[]>([
@@ -175,11 +175,11 @@ const scrollItems = ref<TextScrollItem[]>([
 const fileList = ref<UploadFileType[]>([
   {
     name: '1.jpg',
-    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg'
+    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg'
   },
   {
     name: 'Markdown.pdf',
-    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/Markdown.pdf'
+    url: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/Markdown.pdf'
   }
 ])
 function onIncrease(scale: number) {
@@ -246,7 +246,7 @@ function onDecline(scale: number) {
           <Select :options="options" v-model="selectedValue" />
           <Switch v-model="switchChecked" />
           <Textarea :width="360" v-model:value="textareaValue" placeholder="custom theme textarea" />
-          <Image src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/1.jpg" />
+          <Image src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
         </Space>
         <Calendar v-model:value="cardDate" display="card" />
         <Carousel style="margin-left: 0" :images="images" :width="800" :height="450" />

@@ -55,7 +55,7 @@ export function downloadFile(url: string, fileName?: string): void {
 ```vue
 <script setup lang="ts">
 import { downloadFile } from 'composed-ui'
-donwloadFile('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/Markdown.pdf', 'Markdown')
+donwloadFile('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/Markdown.pdf', 'Markdown')
 </script>
 ```
 

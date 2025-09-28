@@ -282,6 +282,7 @@ watch(
       const primaryColor = to[key as keyof Theme]?.primaryColor || commonTheme.value?.primaryColor || '#1677ff'
       const colorPalettes = getColorPalettes(primaryColor)
       componentsThemeColor[key].colorPalettes = colorPalettes
+      // 生成阴影颜色（使用色板最浅色索引0）
       componentsThemeColor[key].shadowColor = getAlphaColor(colorPalettes[0])
     })
   },
@@ -290,19 +291,28 @@ watch(
   }
 )
 function getColorPalettes(primaryColor: string): string[] {
+  // 接收 HEX 格式颜色值，返回包含10个色阶的数组
+  // 色阶分布：生成的数组索引与色阶对应关系：
+  // 索引 0: 最浅色
+  // 索引 5: 原始色（输入的基础色）
+  // 索引 9: 最深色
   return generate(primaryColor)
 }
 function isStableColor(color: number): boolean {
   return color >= 0 && color <= 255
 }
+// 接收 HEX 格式颜色值，返回添加透明度后的颜色
 function getAlphaColor(frontColor: string, backgroundColor: string = '#ffffff'): string {
   const { r: fR, g: fG, b: fB, a: originAlpha } = new TinyColor(frontColor).toRgb()
   if (originAlpha < 1) return frontColor
+  // 当原始颜色不透明时，通过算法计算等效透明度颜色
+  // 算法原理：将前景颜色与背景颜色线性混合，根据透明度调整混合比例
   const { r: bR, g: bG, b: bB } = new TinyColor(backgroundColor).toRgb()
   for (let fA = 0.01; fA <= 1; fA += 0.01) {
     const r = Math.round((fR - bR * (1 - fA)) / fA)
     const g = Math.round((fG - bG * (1 - fA)) / fA)
     const b = Math.round((fB - bB * (1 - fA)) / fA)
+    // 当计算结果在合法 RGB 范围时，返回带透明度的颜色
     if (isStableColor(r) && isStableColor(g) && isStableColor(b)) {
       return new TinyColor({ r, g, b, a: Math.round(fA * 100) / 100 }).toRgbString()
     }

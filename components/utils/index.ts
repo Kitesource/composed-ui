@@ -759,6 +759,7 @@ export function useInject(key: string): { colorPalettes: Ref<string[]>; shadowCo
     string,
     { colorPalettes: string[]; shadowColor: string }
   > | null
+
   if (
     componentsInjectValue !== null &&
     key in componentsInjectValue &&

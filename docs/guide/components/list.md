@@ -2,7 +2,7 @@
 
 <GlobalElement />
 
-*通用列表*
+_通用列表_
 
 ## 何时使用
 
@@ -84,7 +84,7 @@ for (let i = 1; i <= 8; i++) {
   allListData.value.push({
     href: 'https://Kitesource.github.io/composed-ui/',
     title: `Composed UI part ${i}`,
-    avatar: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg',
+    avatar: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
     description: 'Composed UI, A Composed Vue3 UI Components Library.',
     content:
       'Composed UI supplies streamline web development, incredible Vue components for modern web design and transform your Vue interface completely.'
@@ -149,7 +149,7 @@ const state = reactive({
 <List>
   <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
     <template #avatar>
-      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
     </template>
     <template #description>
       {{ data.description }}
@@ -189,7 +189,7 @@ const listData = ref([
   <List>
     <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
       <template #avatar>
-        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
       </template>
       <template #description>
         {{ data.description }}
@@ -206,7 +206,7 @@ const listData = ref([
 <List :split="false">
   <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
     <template #avatar>
-      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
     </template>
     <template #description>
       {{ data.description }}
@@ -246,7 +246,7 @@ const listData = ref([
   <List :split="false">
     <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
       <template #avatar>
-        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
       </template>
       <template #description>
         {{ data.description }}
@@ -270,7 +270,7 @@ const listData = ref([
     </template>
     <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
       <template #avatar>
-        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
       </template>
       <template #description>
         {{ data.description }}
@@ -313,16 +313,14 @@ const bordered = ref(true)
 </script>
 <template>
   <Flex vertical>
-    <Space align="center">
-      bordered:<Switch v-model="bordered" />
-    </Space>
+    <Space align="center"> bordered:<Switch v-model="bordered" /> </Space>
     <List :bordered="bordered">
       <template #header>
         <div>Header</div>
       </template>
       <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -347,7 +345,7 @@ const bordered = ref(true)
       <List bordered :size="size">
         <ListItem v-for="(data, index) in simpleListData" :key="index">
           <template #avatar>
-            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
           </template>
           <template #title>
             <a href="https://Kitesource.github.io/composed-ui/">{{ data.title }}</a>
@@ -432,7 +430,7 @@ const size = ref('middle')
         <List bordered :size="size">
           <ListItem v-for="(data, index) in simpleListData" :key="index">
             <template #avatar>
-              <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+              <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
             </template>
             <template #title>
               <a href="https://Kitesource.github.io/composed-ui/">{{ data.title }}</a>
@@ -472,7 +470,7 @@ const size = ref('middle')
       <List bordered :loading="loading">
         <ListItem v-for="(data, index) in simpleListData" :key="index" :title="data.title">
           <template #avatar>
-            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
           </template>
           <template #description>
             {{ data.description }}
@@ -540,7 +538,7 @@ const loading = ref(true)
         <List bordered :loading="loading">
           <ListItem v-for="(data, index) in simpleListData" :key="index" :title="data.title">
             <template #avatar>
-              <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+              <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
             </template>
             <template #description>
               {{ data.description }}
@@ -593,7 +591,7 @@ const loading = ref(true)
     <List bordered hoverable>
       <ListItem v-for="(data, index) in simpleListData" :key="index" :title="data.title">
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -657,7 +655,7 @@ const simpleList = ref([
       <List bordered hoverable>
         <ListItem v-for="(data, index) in simpleListData" :key="index" :title="data.title">
           <template #avatar>
-            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+            <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
           </template>
           <template #description>
             {{ data.description }}
@@ -689,7 +687,7 @@ const simpleList = ref([
 <List>
   <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
     <template #avatar>
-      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
     </template>
     <template #description>
       {{ data.description }}
@@ -734,7 +732,7 @@ const listData = ref([
   <List>
     <ListItem v-for="(data, index) in listData" :key="index" :title="data.title">
       <template #avatar>
-        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
       </template>
       <template #description>
         {{ data.description }}
@@ -781,7 +779,7 @@ const listData = ref([
         class="extra-img"
         width="200"
         alt="extra"
-        src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/2.jpg"
+        src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg"
       />
     </template>
   </ListItem>
@@ -845,7 +843,7 @@ const listData = ref([
           class="extra-img"
           width="200"
           alt="extra"
-          src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/2.jpg"
+          src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/2.jpg"
         />
       </template>
     </ListItem>
@@ -863,7 +861,7 @@ const listData = ref([
       <a :href="data.href" target="_blank">{{ data.title }}</a>
     </template>
     <template #avatar>
-      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+      <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
     </template>
     <template #description>
       {{ data.description }}
@@ -915,7 +913,7 @@ for (let i = 1; i <= 8; i++) {
   allListData.value.push({
     href: 'https://Kitesource.github.io/composed-ui/',
     title: `Composed UI part ${i}`,
-    avatar: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg',
+    avatar: 'https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg',
     description: 'Composed UI, A Composed Vue3 UI Components Library.',
     content:
       'Composed UI supplies streamline web development, incredible Vue components for modern web design and transform your Vue interface completely.'
@@ -943,22 +941,16 @@ const pagination = {
         <a :href="data.href" target="_blank">{{ data.title }}</a>
       </template>
       <template #avatar>
-        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
       </template>
       <template #description>
         {{ data.description }}
       </template>
       {{ data.content }}
       <template #actions>
-        <span>
-          <StarOutlined style="margin-right: 8px" />156
-        </span>
-        <span>
-          <LikeOutlined style="margin-right: 8px" />156
-        </span>
-        <span>
-          <MessageOutlined style="margin-right: 8px" />6
-        </span>
+        <span> <StarOutlined style="margin-right: 8px" />156 </span>
+        <span> <LikeOutlined style="margin-right: 8px" />156 </span>
+        <span> <MessageOutlined style="margin-right: 8px" />6 </span>
       </template>
       <template #extra>
         <img
@@ -1047,7 +1039,7 @@ const pagination = {
         <a :href="data.href" target="_blank">{{ data.title }}</a>
       </template>
       <template #avatar>
-        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+        <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
       </template>
       <template #description>
         {{ data.description }}
@@ -1114,9 +1106,7 @@ const state = reactive({
         <Space gap="small" vertical> split:<Switch v-model="state.split" /> </Space>
       </Col>
       <Col :span="6">
-        <Flex gap="small" vertical>
-          size:<Select :options="sizeOptions" v-model="state.size" />
-        </Flex>
+        <Flex gap="small" vertical> size:<Select :options="sizeOptions" v-model="state.size" /> </Flex>
       </Col>
       <Col :span="6">
         <Space gap="small" vertical> loading:<Switch v-model="state.loading" /> </Space>
@@ -1160,7 +1150,7 @@ const state = reactive({
           <a :href="data.href" target="_blank">{{ data.title }}</a>
         </template>
         <template #avatar>
-          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.5/1.jpg" />
+          <Avatar src="https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/1.jpg" />
         </template>
         <template #description>
           {{ data.description }}
@@ -1178,55 +1168,55 @@ const state = reactive({
 
 ### List
 
-参数 | 说明 | 类型 | 默认值
-:-- | :-- | :-- | :--
-bordered | 是否展示边框 | boolean | false
-vertical | 是否使用竖直样式 | boolean | false
-split | 是否展示分割线 | boolean | true
-size | 列表尺寸 | 'small' &#124; 'middle' &#124; 'large' | 'middle'
-loading | 是否加载中 | boolean | false
-hoverable | 是否显示悬浮样式 | boolean | false
-header | 列表头部 | string &#124; slot | undefined
-footer | 列表底部 | string &#124; slot | undefined
-spinProps | `Spin` 组件属性配置，参考 [Spin Props](https://Kitesource.github.io/composed-ui/guide/components/spin.html#spin)，用于配置列表加载中样式 | object | {}
-emptyProps | `Empty` 组件属性配置，参考 [Empty Props](https://Kitesource.github.io/composed-ui/guide/components/empty.html#empty)，用于配置暂无数据样式 | object | {}
-showPagination | 是否显示分页 | boolean | false
-pagination | `Pagination` 组件属性配置，参考 [Pagination Props](https://Kitesource.github.io/composed-ui/guide/components/pagination.html#pagination)，用于配置分页功能 | object | {}
+| 参数 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| bordered | 是否展示边框 | boolean | false |
+| vertical | 是否使用竖直样式 | boolean | false |
+| split | 是否展示分割线 | boolean | true |
+| size | 列表尺寸 | 'small' &#124; 'middle' &#124; 'large' | 'middle' |
+| loading | 是否加载中 | boolean | false |
+| hoverable | 是否显示悬浮样式 | boolean | false |
+| header | 列表头部 | string &#124; slot | undefined |
+| footer | 列表底部 | string &#124; slot | undefined |
+| spinProps | `Spin` 组件属性配置，参考 [Spin Props](https://Kitesource.github.io/composed-ui/guide/components/spin.html#spin)，用于配置列表加载中样式 | object | {} |
+| emptyProps | `Empty` 组件属性配置，参考 [Empty Props](https://Kitesource.github.io/composed-ui/guide/components/empty.html#empty)，用于配置暂无数据样式 | object | {} |
+| showPagination | 是否显示分页 | boolean | false |
+| pagination | `Pagination` 组件属性配置，参考 [Pagination Props](https://Kitesource.github.io/composed-ui/guide/components/pagination.html#pagination)，用于配置分页功能 | object | {} |
 
 ### ListItem
 
-参数 | 说明 | 类型 | 默认值
-:-- | :-- | :-- | :--
-avatar | 列表元素的图标 | string &#124; slot | undefined
-avatarProps | `Avatar` 组件属性配置，参考 [Avatar Props](https://Kitesource.github.io/composed-ui/guide/components/avatar.html#avatar)，用于配置列表图标样式 | object | {}
-title | 列表元素的标题 | string &#124; slot | undefined
-description | 列表元素的描述内容 | string &#124; slot | undefined
-actions | 列表操作组 | slot | undefined
-extra | 额外内容，展示在列表右侧 | string &#124; slot | undefined
-avatarStyle | 设置图标的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {}
-titleStyle | 设置标题的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {}
-descriptionStyle | 设置描述内容的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {}
-contentStyle | 设置内容的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {}
-actionsStyle | 设置操作区域的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {}
-extraStyle | 设置额外内容的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {}
+| 参数 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| avatar | 列表元素的图标 | string &#124; slot | undefined |
+| avatarProps | `Avatar` 组件属性配置，参考 [Avatar Props](https://Kitesource.github.io/composed-ui/guide/components/avatar.html#avatar)，用于配置列表图标样式 | object | {} |
+| title | 列表元素的标题 | string &#124; slot | undefined |
+| description | 列表元素的描述内容 | string &#124; slot | undefined |
+| actions | 列表操作组 | slot | undefined |
+| extra | 额外内容，展示在列表右侧 | string &#124; slot | undefined |
+| avatarStyle | 设置图标的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {} |
+| titleStyle | 设置标题的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {} |
+| descriptionStyle | 设置描述内容的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {} |
+| contentStyle | 设置内容的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {} |
+| actionsStyle | 设置操作区域的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {} |
+| extraStyle | 设置额外内容的样式 | [CSSProperties](https://cn.vuejs.org/api/utility-types.html#cssproperties) | {} |
 
 ## Slots
 
 ### List Slots
 
-名称 | 说明 | 类型
-:-- | :-- | :--
-header | 自定义列表头部 | v-slot:header
-default | 自定义内容 | v-slot:default
-footer | 自定义列表底部 | v-slot:footer
+| 名称    | 说明           | 类型           |
+| :------ | :------------- | :------------- |
+| header  | 自定义列表头部 | v-slot:header  |
+| default | 自定义内容     | v-slot:default |
+| footer  | 自定义列表底部 | v-slot:footer  |
 
 ### ListItem Slots
 
-名称 | 说明 | 类型
-:-- | :-- | :--
-avatar | 自定义列表元素的图标 | v-slot:avatar
-title | 自定义列表元素的标题 | v-slot:title
-description | 自定义列表元素的描述内容 | v-slot:description
-default | 自定义内容 | v-slot:default
-actions | 自定义列表操作组 | v-slot:actions
-extra | 自定义额外内容 | v-slot:extra
+| 名称        | 说明                     | 类型               |
+| :---------- | :----------------------- | :----------------- |
+| avatar      | 自定义列表元素的图标     | v-slot:avatar      |
+| title       | 自定义列表元素的标题     | v-slot:title       |
+| description | 自定义列表元素的描述内容 | v-slot:description |
+| default     | 自定义内容               | v-slot:default     |
+| actions     | 自定义列表操作组         | v-slot:actions     |
+| extra       | 自定义额外内容           | v-slot:extra       |

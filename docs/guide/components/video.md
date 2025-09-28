@@ -2,7 +2,7 @@
 
 <GlobalElement />
 
-*简易封装的播放器*
+_简易封装的播放器_
 
 ## 何时使用
 
@@ -10,8 +10,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 const video = ref()
 function onPlay() {
   console.log('play')
@@ -29,22 +29,15 @@ const pause = () => {
 
 ## 基本使用
 
-<Video
-  :src="src"
-  :poster="poster"
-  width="100%"
-  height="56.25%"
-  @play="onPlay"
-  @pause="onPause"
-/>
+<Video :src="src" :poster="poster" width="100%" height="56.25%" @play="onPlay" @pause="onPause" />
 
 ::: details Show Code
 
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 function onPlay() {
   console.log('play')
 }
@@ -53,14 +46,7 @@ function onPause() {
 }
 </script>
 <template>
-  <Video
-    :src="src"
-    :poster="poster"
-    width="100%"
-    height="56.25%"
-    @play="onPlay"
-    @pause="onPause"
-  />
+  <Video :src="src" :poster="poster" width="100%" height="56.25%" @play="onPlay" @pause="onPause" />
 </template>
 ```
 
@@ -81,17 +67,11 @@ function onPause() {
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 </script>
 <template>
-  <Video
-    :src="src"
-    :poster="poster"
-    :width="400"
-    :height="225"
-    :icon-size="60"
-  />
+  <Video :src="src" :poster="poster" :width="400" :height="225" :icon-size="60" />
 </template>
 ```
 
@@ -99,7 +79,7 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 
 ## 自动截取视频指定帧作为封面图
 
-*在未设置封面时，自动截取视频第 `second` 秒指定帧作为封面图*
+_在未设置封面时，自动截取视频第 `second` 秒指定帧作为封面图_
 
 <br/>
 
@@ -115,15 +95,10 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
 </script>
 <template>
-  <Video
-    :src="src"
-    :second="3"
-    width="100%"
-    height="56.25%"
-  />
+  <Video :src="src" :second="3" width="100%" height="56.25%" />
 </template>
 ```
 
@@ -138,8 +113,8 @@ const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 </script>
 <template>
   <Video :src="src" :poster="poster" fit="cover" />
@@ -150,7 +125,7 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 
 ## 自动循环播放
 
-*据一般规则，媒体内容将在满足以下至少一个的条件下[自动播放](https://developer.mozilla.org/zh-CN/docs/Web/Media/Autoplay_guide)：*
+_据一般规则，媒体内容将在满足以下至少一个的条件下[自动播放](https://developer.mozilla.org/zh-CN/docs/Web/Media/Autoplay_guide)：_
 
 1. 音频被静音或其音量设置为 `0`
 2. 用户和网页已有交互行为（包括点击、触摸、按下某个键等等）
@@ -179,18 +154,11 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 </script>
 <template>
-  <Video
-    :src="src"
-    :poster="poster"
-    autoplay
-    loop
-    width="100%"
-    height="56.25%"
-  />
+  <Video :src="src" :poster="poster" autoplay loop width="100%" height="56.25%" />
 </template>
 ```
 
@@ -211,17 +179,11 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 </script>
 <template>
-  <Video
-    :src="src"
-    :poster="poster"
-    :controls="false"
-    width="100%"
-    height="56.25%"
-  />
+  <Video :src="src" :poster="poster" :controls="false" width="100%" height="56.25%" />
 </template>
 ```
 
@@ -242,17 +204,11 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 </script>
 <template>
-  <Video
-    :src="src"
-    :poster="poster"
-    :play-icon="false"
-    width="100%"
-    height="56.25%"
-  />
+  <Video :src="src" :poster="poster" :play-icon="false" width="100%" height="56.25%" />
 </template>
 ```
 
@@ -273,8 +229,8 @@ const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.mp4')
-const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.1.2/ultra.jpg')
+const src = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.mp4')
+const poster = ref('https://cdn.jsdelivr.net/gh/Kitesource/resources@0.0.1/ultra.jpg')
 const video = ref()
 const play = () => {
   video.value.play()
@@ -300,29 +256,29 @@ const pause = () => {
 
 ### Video
 
-参数 | 说明 | 类型 | 默认值
-:-- | :-- | :-- | :--
-width | 视频播放器宽度，单位 `px` | number | 800
-height | 视频播放器高度，单位 `px` | number | 450
-src | 视频文件地址，支持网络地址 `https` 和相对地址 | string | undefined
-poster | 视频封面地址，支持网络地址 `https` 和相对地址 | string | undefined
-second | 在未设置封面时，自动截取视频第 `second` 秒对应帧作为视频封面，单位 `s` | number | 0.5
-fit | 视频封面和内容的缩放规则，参考 [object-fit](https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit) | 'none' &#124; 'fill' &#124; 'contain' &#124; 'cover' | 'contain'
-autoplay | 视频就绪后是否马上播放，优先级高于 `preload`，参考 [MDN 自动播放指南](https://developer.mozilla.org/zh-CN/docs/Web/Media/Autoplay_guide) | boolean | false
-controls | 是否向用户显示控件，比如进度条，全屏等 | boolean | true
-loop | 视频播放完成后，是否循环播放 | boolean | false
-muted |  是否静音 | boolean | false
-preload | 是否在页面加载后载入视频，如果设置了 `autoplay` 属性，则 `preload` 将被忽略 | 'auto' &#124; 'metadata' &#124; 'none' | 'metadata'
-playIcon | 播放暂停时是否显示播放器中间的暂停图标 | boolean | true
-iconSize | 暂停图标尺寸，单位 `px` | number | 80
+| 参数 | 说明 | 类型 | 默认值 |
+| :-- | :-- | :-- | :-- |
+| width | 视频播放器宽度，单位 `px` | number | 800 |
+| height | 视频播放器高度，单位 `px` | number | 450 |
+| src | 视频文件地址，支持网络地址 `https` 和相对地址 | string | undefined |
+| poster | 视频封面地址，支持网络地址 `https` 和相对地址 | string | undefined |
+| second | 在未设置封面时，自动截取视频第 `second` 秒对应帧作为视频封面，单位 `s` | number | 0.5 |
+| fit | 视频封面和内容的缩放规则，参考 [object-fit](https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit) | 'none' &#124; 'fill' &#124; 'contain' &#124; 'cover' | 'contain' |
+| autoplay | 视频就绪后是否马上播放，优先级高于 `preload`，参考 [MDN 自动播放指南](https://developer.mozilla.org/zh-CN/docs/Web/Media/Autoplay_guide) | boolean | false |
+| controls | 是否向用户显示控件，比如进度条，全屏等 | boolean | true |
+| loop | 视频播放完成后，是否循环播放 | boolean | false |
+| muted | 是否静音 | boolean | false |
+| preload | 是否在页面加载后载入视频，如果设置了 `autoplay` 属性，则 `preload` 将被忽略 | 'auto' &#124; 'metadata' &#124; 'none' | 'metadata' |
+| playIcon | 播放暂停时是否显示播放器中间的暂停图标 | boolean | true |
+| iconSize | 暂停图标尺寸，单位 `px` | number | 80 |
 
-*`preload` 可选属性：*
+_`preload` 可选属性：_
 
 - `auto`: 一旦页面加载，则开始加载视频;
 - `metadata`: 当页面加载后仅加载视频的元数据（例如长度），建议使用 `metadata`，以便视频自动获取第一帧作为封面 `poster`
 - `none`: 页面加载后不应加载视频
 
-*`fit` 可选属性：*
+_`fit` 可选属性：_
 
 - `none`: 保存原有内容，不进行缩放;
 - `fill`: 不保持原有比例，内容拉伸填充整个内容容器;
@@ -331,7 +287,7 @@ iconSize | 暂停图标尺寸，单位 `px` | number | 80
 
 ## Events
 
-名称 | 说明 | 类型
-:-- | :-- | :--
-play | 开始播放的回调 | () => void
-pause | 暂停播放的回调 | () => void
+| 名称  | 说明           | 类型       |
+| :---- | :------------- | :--------- |
+| play  | 开始播放的回调 | () => void |
+| pause | 暂停播放的回调 | () => void |
